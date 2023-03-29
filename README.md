@@ -4,7 +4,7 @@ This repository Datasets used for the paper "KG-Roar: Interactive Datalog-based 
 
 # Datasets
 
-These synthetic datasets have been used for an experimental evaluation of the elapsed time for company control reasoning task with growing graph size.
+These synthetic datasets have been used for an experimental evaluation of the elapsed time for company control reasoning task with growing graph size. They are both provided in `.parquet` and `.csv` file formats. CSV files have been compressed with `gzip`.
 
 ## Folder structure
 
@@ -12,20 +12,20 @@ These synthetic datasets have been used for an experimental evaluation of the el
 repo
 ┣━ synthetic_graphs:
 ┃  ┗━ parquet: size_<n>M_nodes.parquet
-┃  ┗━ csv: size_<n>M_nodes.parquet
+┃  ┗━ csv: size_<n>M_nodes.csv
 ┗━ synthetic_targets:
    ┗━ parquet: sampling_from_<n>M_generation_<g>_size_<m>.parquet
-   ┗━ csv: sampling_from_<n>M_generation_<g>_size_<m>.parquet
+   ┗━ csv: sampling_from_<n>M_generation_<g>_size_<m>.csv
 ```
 
 ## Dataset description
 
-`synthetic_graphs` are ...; the naming convention specifies the number `n` of...
+`synthetic_graphs` are artifially generated graphs that show structural similarities with the real Italian company network; the naming convention specifies the number `n` of nodes (in millions) in the graph.
 
-`synthetic_targets` are ...; the naming convention specifies:
-* the number `n` of ...;
-* the generation `g` that ...;
-* the size `m` of ....
+`synthetic_targets` are sets of target companies for which we derived controls in the experimental evaluation; the naming convention specifies:
+* the number `n` which refers to the graph size (in million of nodes) from where companies have been sampled;
+* the generation `g` which is used to identify a specific sampling;
+* the size `m` of the sampled companies.
 
 
 ## Authors
