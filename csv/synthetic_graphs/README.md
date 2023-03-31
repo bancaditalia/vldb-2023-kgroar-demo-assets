@@ -1,0 +1,1 @@
+Due to [GitHub limitations](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) on the size of files in regular Git repositories, synthetic graphs datasets in CSV format are available [here](https://www.dropbox.com/sh/p1lxj6r0e7suoqs/AACma4W92hH8UQUaHxjff98ha?dl=0).

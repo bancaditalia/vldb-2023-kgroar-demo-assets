@@ -1,6 +1,6 @@
 # VLDB 2023 submission — KG-Roar 🦁 demo assets
 
-This repository Datasets used for the paper "KG-Roar: Interactive Datalog-based Reasoning on Virtual Knowledge Graphs" submitted to [VLDB 2023](https://vldb.org/2023/), the 49th International Conference on Very Large Data Bases.
+This repository includes the datasets used for the paper "KG-Roar: Interactive Datalog-based Reasoning on Virtual Knowledge Graphs" submitted to [VLDB 2023](https://vldb.org/2023/), the 49th International Conference on Very Large Data Bases.
 
 # Datasets
 
@@ -9,13 +9,11 @@ These synthetic datasets have been used for an experimental evaluation of the el
 ## Folder structure
 
 ```bash
-repo
+format (csv or parquet)
 ┣━ synthetic_graphs:
-┃  ┗━ parquet: size_<n>M_nodes.parquet
-┃  ┗━ csv: size_<n>M_nodes.csv
+┃  ┗━ size_<n>M_nodes.parquet
 ┗━ synthetic_targets:
-   ┗━ parquet: sampling_from_<n>M_generation_<g>_size_<m>.parquet
-   ┗━ csv: sampling_from_<n>M_generation_<g>_size_<m>.csv
+   ┗━ sampling_from_<n>M_generation_<g>_size_<m>.parquet
 ```
 
 ## Dataset description
@@ -26,7 +24,6 @@ repo
 * the number `n` which refers to the graph size (in million of nodes) from where companies have been sampled;
 * the generation `g` which is used to identify a specific sampling;
 * the size `m` of the sampled companies.
-
 
 ## Authors
 * Luigi Bellomarini, [Bank of Italy](https://www.bankit.art/people/luigi-bellomarini)
